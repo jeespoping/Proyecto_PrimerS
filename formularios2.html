@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Clinica de mascostas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./css/estilo.css">
+
+</head>
+<body>
+
+
+<!--
+<div class="container p-3 my-3 bg-primary text-white azul ">
+  <h1>Club de Baloncesto</h1>
+
+</div>
+-->
+
+
+
+<div class="container-fluid ">
+
+
+
+
+  <div class=" borde">
+    <h1 class="">Clinica de mascotas</h1>
+  <br>
+  <nav class="navbar navbar-inverse">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Mascotas</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="index.html">Inicio</a></li>
+      <li class="active"><a href="formularios2.html">Listar Propietarios</a></li>
+      <li ><a href="formularios.html">Agregar Mascotas</a></li>
+
+    </ul>
+
+
+  </nav>
+<div class="container-fluid">
+
+<!-- grid-->
+
+  <div class="row">
+    <div class="col-sm-8">
+      <p>Agregar Mascotas</p>
+         <div class="container-fluid contenedor">
+  <table class="table table-striped " id="tabladd">
+     <!--fila-->
+      <tr>
+     <th>Nombre</th>
+     <th>Apellido</th>
+     <th>Dirección</th>
+     <th>Teléfono</th>
+     <th>Opción</th>
+      </tr>
+      <!--fila-->
+      <tr>
+        <td>Jorge</td>
+        <td>Melendez</td>
+        <td>Calle 20 12</td>
+        <td>321154585</td>
+        <td><button type='submit' class='btn btn-primary ver_detalle' id='et' > Ver detalle</button></td>
+         </tr>
+         <!--fila-->
+         <tr>
+          <td>Pepito</td>
+          <td>Perez</td>
+          <td>carrera 125# 5 20 12</td>
+          <td>123154563</td>
+          <td><button type='submit' class='btn btn-primary ver_detalle' id='et' > Ver detalle</button></td>
+           </tr>
+           <!--fila-->
+           <tr>
+            <td>Catalino</td>
+            <td>fernandez</td>
+            <td>barrio bastidas 20 12</td>
+            <td>321548752</td>
+            <td><button type='submit' class='btn btn-primary ver_detalle' id='et' > Ver detalle</button></td>
+             </tr>
+             <!--fila-->
+             <tr>
+              <td>Maria</td>
+              <td>perea</td>
+              <td>circum  20 12</td>
+              <td>3215425221</td>
+              <td><button type='submit' class='btn btn-primary ver_detalle' id='et' >Ver detalle</button></td>
+               </tr>
+               <!--fila-->
+               <tr>
+                <td>Michael</td>
+                <td>Bermudez</td>
+                <td>Bonda 50 12</td>
+                <td>300515482</td>
+                <td><button type='submit' class='btn btn-primary ver_detalle' id='et' > Ver detalle</button></td>
+                 </tr>
+                 <!--fila-->
+                 <tr>
+                  <td>Johan</td>
+                  <td>Melendez</td>
+                  <td>Alto delicias 20 12</td>
+                  <td>4201548</td>
+                  <td><button type='submit' class='btn btn-primary ver_detalle' id='et' > Ver detalle</button></td>
+                   </tr>
+                   <!--fila-->
+  </table>
+</div>
+    </div>
+    <div class=" col-md-3">
+    <!-- contenedor der-->
+<div class="conte_derecho container-fluid">
+  <h1>Agregar propietario</h1>
+  <form class="form-inline" action="/action_page.php">
+    <div class="form">
+      <label for="email">Nombre:   </label>
+      <input type="text " class="form-control ancho" id="textnombre">
+    </div>
+    <br>
+    <div class="form">
+      <label for="pwd">Apellido     </label>
+      <input type="text " class="form-control ancho" id="textapellido" >
+    </div>
+    <br>
+    <div class="form">
+      <label for="pwd">Dirección  </label>
+      <input type="text " class="form-control ancho" id="textdireccion" >
+    </div>
+    <br>
+    <div class="form">
+      <label for="pwd">Teléfono        </label>
+      <input type="text " class="form-control ancho" id="texttelefono" >
+    </div>
+
+    
+    <button type="button" class="btn btn-primary bot" id="bot" >Editar y Guardar</button>
+  </form>
+
+<br><br><br>
+
+<!-- contenedor izq 2 -->
+<div class="conte_derecho2">
+  <h2>Agregar Mascota</h2>
+  <h3>Propietario:<label  id="labelPropietario">sadsadad</label></h3>
+
+
+  <form class="form-inline" action="/action_page.php">
+    <div class="form">
+      <label for="email">Nombre:   &nbsp;    &nbsp;  &nbsp;  &nbsp;</label>
+      <input type="text " class="form-control ancho" id="mascota1" >
+    </div>
+    <br>
+    <div class="form">
+      <label for="pwd">Tipo         &nbsp;    &nbsp;  &nbsp;  &nbsp;      </label>
+      <select name="" id="mascota2" >
+        <option >Seleccione</option>
+<option >Vaca</option>
+<option >Jirafa</option>
+<option >Unicornio</option>
+<option >Dragón</option>
+      </select>
+
+    </div>
+    <br>
+    <div class="form">
+      <label for="pwd">Fecha N             &nbsp;  &nbsp;  &nbsp;      </label>
+
+      <input type="date" id="mascota3" name="birthday">
+
+
+
+    </div>
+    <br>
+
+
+
+    <button type="button" class="btn btn-danger botMascota" id="ll" >Agregar</button>
+  </form>
+</div >
+
+
+
+<!-- tabla derecha -->
+<div class="container-fluid ">
+  <table class="table table-dark  " id="tablaMascota">
+  <!--fila-->
+    <tr >
+    <th>Propietario</th>
+  <th>Nombre</th>
+  <th>tipo</th>
+  <th>Fecha Nacimiento</th>
+  </tr>
+
+  <!--fila-->
+  <tr >
+    <td>Jorge</td>
+    <td>negra</td>
+    <td>vaca</td>
+    <td>2020/03/2019</td>
+    </tr>
+    <!--fila-->
+  <tr>
+    <td>Pepito</td>
+    <td>negra</td>
+    <td>dragón</td>
+    <td>2020/03/2019</td>
+    </tr>
+    <!--fila-->
+  <tr>
+    <td>Catalino</td>
+    <td>negra</td>
+    <td>vaca</td>
+    <td>2020/03/2019</td>
+    </tr>
+    <!--fila-->
+  <tr>
+    <td>Maria</td>
+    <td>negra</td>
+    <td>dragón</td>
+    <td>2020/03/2019</td>
+    </tr>
+    <!--fila-->
+  <tr>
+    <td>Michael</td>
+    <td>negra</td>
+    <td>unicornio</td>
+    <td>2020/03/2019</td>
+    </tr>
+    <!--fila-->
+  <tr>
+    <td>Johan</td>
+    <td>negra</td>
+    <td>dragón</td>
+    <td>2020/03/2019</td>
+    </tr>
+    <!--fila-->
+  <tr>
+    <td>Maria</td>
+    <td>negra</td>
+    <td>unicornio</td>
+    <td>2020/03/2019</td>
+    </tr>
+    <!--fila-->
+  <tr>
+    <td>Pepito</td>
+    <td>negra</td>
+    <td>dragón</td>
+    <td>2020/03/2019</td>
+    </tr>
+    <!--fila-->
+  <tr>
+    <td>Jorge</td>
+    <td>negra</td>
+    <td>unicornio</td>
+    <td>2020/03/2019</td>
+    </tr>
+    <!--fila-->
+  <tr>
+    <td>Jorge</td>
+    <td>negra</td>
+    <td>dragón</td>
+    <td>2020/03/2019</td>
+    </tr>
+    <!--fila-->
+  <tr>
+    <td>Maria</td>
+    <td>rojo Verdoso</td>
+    <td>dragón</td>
+    <td>2020/03/2019</td>
+    </tr>
+    <!--fila-->
+  <tr>
+    <td>Catalino</td>
+    <td>violeta</td>
+    <td>Jirafa</td>
+    <td>2020/03/2019</td>
+    </tr>
+    <!--fila-->
+  <tr>
+    <td>Catalino</td>
+    <td>negra</td>
+    <td>vaca</td>
+    <td>2020/03/2019</td>
+    </tr>
+    <!--fila-->
+  <tr>
+    <td>Jorge</td>
+    <td>azul</td>
+    <td>Jirafa</td>
+    <td>2020/03/2019</td>
+    </tr>
+    <!--fila-->
+  <tr>
+    <td>Catalino</td>
+    <td>verde</td>
+    <td>Jirafa</td>
+    <td>2020/03/2019</td>
+    </tr>
+
+
+  </table>
+</div>
+  </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+</div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="./js/funciones_verdetalle.js">
+</script>
+
+</body>
+</html>
